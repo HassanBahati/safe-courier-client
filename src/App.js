@@ -1,11 +1,12 @@
 import React from 'react'
-import HomeScreen from './screens/HomeScreen'
+import Navbar from './components/Navbar'
+import './index.css'
 
 function App() {
   return (
-    <div>
-      <HomeScreen/>
-    </div>
+    
+      <Navbar/>
+   
   );
 }
 

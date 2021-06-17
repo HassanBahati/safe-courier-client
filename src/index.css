@@ -6,3 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+ul{
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+}
