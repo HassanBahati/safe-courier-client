@@ -10,7 +10,7 @@ export default function Login() {
                     <div className="">
                     <div className="form-group ">
                         <label>User Name</label>
-                        <input type="text" placeholder= "Your User Name here" className="form-control" />
+                        <input type="text" required placeholder= "Your User Name here" className="form-control" />
                     </div>
                     
                     <div className="form-group">
@@ -21,7 +21,7 @@ export default function Login() {
                         <input type="submit"  value="Login" className="btn btn-dark btn-block" />
                     </div>
                     </div>
-                    <p>New to Safe Courier? <Link to='/register'>SignUp</Link></p>
+                    <p>New to Safe Courier? <Link to='/register'>Sign Up</Link></p>
 
                     
                    

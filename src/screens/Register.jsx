@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 export default function Register() {
   return (
@@ -23,7 +24,7 @@ export default function Register() {
                         <input type="submit"  value="Register" className="btn btn-dark btn-block" />
                     </div>
                     </div>
-
+                    <p>Already have an Account? <Link to='/log-in'>Sign In</Link></p>
                     
                    
                 </form>
