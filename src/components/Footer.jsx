@@ -14,7 +14,7 @@ function Footer() {
           >
             © 2021 Copyright:
             <a className="text-reset fw-bold" href="/">
-              Safe Courier @ OutBox Hub Uganda
+              Hassan Bahati Mukisa @ OutBox Hub Uganda
             </a>
           </div>
 
