@@ -13,6 +13,7 @@ import PropTypes from "prop-types";
 import Logout from "./auth/Logout";
 import RegisterModal from "./auth/RegisterModal";
 import LoginModal from "./auth/LoginModal";
+import { Link } from "react-router-dom";
 
 class AppNavbar extends Component {
   state = {
@@ -37,6 +38,11 @@ class AppNavbar extends Component {
           </span>
         </NavItem>
         <NavItem>
+          <span className='navbar-text mr-3'>
+            <strong>{user ? <Link to='/dashboard'>Dashboard</Link> : ''}</strong>
+          </span>
+        </NavItem>
+        <NavItem>
           <Logout />
         </NavItem>
       </Fragment>
@@ -58,7 +64,7 @@ class AppNavbar extends Component {
       <div>
         <Navbar color="dark" dark expand="sm" className="fixed-top">
           <Container>
-            <NavbarBrand href="/">Safe Courier</NavbarBrand>
+            <NavbarBrand ><Link id='appLogo' to='/'>Safe Courier</Link></NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>

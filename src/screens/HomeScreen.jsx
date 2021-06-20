@@ -4,7 +4,8 @@ import Categories from "../components/Categories";
 import GridCards from "../components/GridCards";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
-
+import { Redirect } from "react-router";
+import TrackOrder from "../components/TrackOrder";
 
 export default function HomeScreen() {
   const [pickUp, setPickUp] = useState("Select Pickup");
@@ -20,8 +21,8 @@ export default function HomeScreen() {
   };
 
   //when the selections have been made
-  if(pickUp !== "Select Pickup" && delivery !== "Select Delivery"){
-    
+  if (pickUp !== "Select Pickup" && delivery !== "Select Delivery") {
+    return <Redirect to="/dashboard" />;
   }
   return (
     <Fragment>
@@ -104,11 +105,14 @@ export default function HomeScreen() {
               </div>
             </div>
           </div>
-        </div>
+        </div> <hr style={{maxWidth:'300px', color:'#33B5E5',}}/>
       </div>
 
       <Categories />
 
+      <TrackOrder/>
+
+    
       <GridCards />
       <logx />
 
@@ -214,21 +218,19 @@ export default function HomeScreen() {
                 </p>
                 <p>
                   <i className="fas fa-envelope me-3"></i>
-                  safecourier@outbox.co.ug
+                  mukisabahati@gmail.com
                 </p>
                 <p>
-                  <i className="fas fa-phone me-3"></i> +256 567 88
+                  <i className="fas fa-phone me-3"></i> +256 784233762
                 </p>
                 <p>
-                  <i className="fas fa-print me-3"></i> +256 567 89
+                  <i className="fas fa-print me-3"></i> +256 784233762
                 </p>
               </div>
             </div>
           </div>
         </section>
       </footer>
-
-  
     </Fragment>
   );
 }

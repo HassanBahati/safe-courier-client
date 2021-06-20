@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import Footer from "./components/Footer";
 import AppNavbar from "./components/AppNavbar";
+import UserDashboard from "./screens/UserDashboard";
 
 // import {loadUser} from './actions/authActions'
 
@@ -22,6 +23,9 @@ function App() {
                 <Switch>
                   <Route exact path="/">
                     <HomeScreen />
+                  </Route>
+                  <Route path='/dashboard'>
+                    <UserDashboard/>
                   </Route>
                 </Switch>
               </div>

@@ -12,3 +12,9 @@ ul{
   float: right;
   justify-content: flex-end;
 }
+
+#appLogo{
+  color: white;
+  font-weight: 400;
+ 
+}

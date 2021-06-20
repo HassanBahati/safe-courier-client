@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Categories() {
     return (
-        <div className="text-center container">
+        <div className="m-2 text-center container">
         <div className="card-body">
           <div className="container">
             <div className="row">
@@ -14,7 +14,6 @@ export default function Categories() {
               <div className="col-md">Additional Services</div>
             </div>
           </div>
-          <button type="button" className="btn btn-info">Get Started</button>
         </div>
       </div>
     )
