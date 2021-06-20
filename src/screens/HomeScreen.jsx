@@ -20,10 +20,6 @@ export default function HomeScreen() {
     setDelivery(e);
   };
 
-  //when the selections have been made
-  if (pickUp !== "Select Pickup" && delivery !== "Select Delivery") {
-    return <Redirect to="/dashboard" />;
-  }
   return (
     <Fragment>
       <div

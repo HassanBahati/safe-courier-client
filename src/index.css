@@ -18,3 +18,44 @@ ul{
   font-weight: 400;
  
 }
+
+#customerSay{
+  color: #000;
+  font-weight: 900;
+}
+
+/* checkout steps  */
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.checkout-steps > div.active{
+  border-top-color: #33B5E5;
+  color: #33B5E5;
+}
+
+.remove-btn{
+  margin-right: 0.5rem;
+}
+
+.fade-enter{
+opacity:0.01
+}
+
+.fade-enter-active{
+opacity: 1;
+transition: opacity 1000ms ease-in;
+}
+
+.fade-exit{
+opacity: 1;
+}
+
+.fade-exit-active{
+opacity: 0.01;
+transition: opacity 1000ms ease-in;
+}

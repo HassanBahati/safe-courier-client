@@ -5,7 +5,7 @@ export default function GridCards() {
         
     <div className="container">
     <div className="row row-cols-1 row-cols-md-3 g-4 mb-5">
-      <div className="col"><strong style={{fontWeight:''}}>
+      <div className="col"><strong id='customerSay'>
       <h1>What Our<br/> Customers Say</h1></strong>
       <hr style={{maxWidth:'300px', color:'#33B5E5',}}/>
       </div>

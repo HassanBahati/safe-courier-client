@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Card, Col, Container, Row ,Button} from "reactstrap";
 import TrackOrder from "../components/TrackOrder";
+import { Link } from "react-router-dom";
 
 class UserDashboard extends Component {
   static propTypes = {
@@ -19,7 +20,7 @@ class UserDashboard extends Component {
 
             </Col>
             <Col>
-            <Button color='' style={{backgroundColor:'#33B5E5', color:'white', display:'flex', float:'right'}}>Place Delivery Order</Button>
+            <Button color='' style={{backgroundColor:'#33B5E5', color:'white', display:'flex', float:'right'}}><Link to='/shipping'>Place Delivery Order</Link></Button>
             </Col>
         </Row>
        
